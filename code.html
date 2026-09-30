@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Ristorante Aldente | Cocina Italiana en Son Verí Nou, Mallorca</title>
+  <meta name="description" content="Auténtica cocina italiana en Son Verí Nou, Mallorca. Pasta fresca hecha a mano, pizzas crujientes al horno de piedra y el calor de la hospitalidad mediterránea."/>
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <!-- Material Symbols Outlined -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          borderWidth: {
+            '1.5': '1.5px',
+          },
+          colors: {
+            "tertiary-fixed": "#66ff8e",
+            "on-secondary-fixed-variant": "#21502e",
+            "on-error-container": "#93000a",
+            "inverse-on-surface": "#edf2ed",
+            "on-secondary": "#ffffff",
+            "surface": "#f6fbf5",
+            "on-error": "#ffffff",
+            "on-primary-container": "#ffe5e1",
+            "on-surface-variant": "#59413d",
+            "surface-container-highest": "#dfe4df",
+            "surface-container-high": "#e5e9e4",
+            "inverse-surface": "#2c322e",
+            "background": "#f6fbf5",
+            "primary-fixed": "#ffdad5",
+            "on-secondary-container": "#3d6d48",
+            "on-primary-fixed": "#410000",
+            "error-container": "#ffdad6",
+            "surface-container": "#ebefea",
+            "outline-variant": "#e1bfb9",
+            "on-background": "#181d1a",
+            "tertiary": "#005f28",
+            "on-tertiary-container": "#aaffb5",
+            "on-primary-fixed-variant": "#8e130c",
+            "primary-fixed-dim": "#ffb4a9",
+            "on-primary": "#ffffff",
+            "on-tertiary-fixed-variant": "#005322",
+            "on-tertiary-fixed": "#002109",
+            "primary": "#9e2016",
+            "on-secondary-fixed": "#00210b",
+            "surface-bright": "#f6fbf5",
+            "outline": "#8d706c",
+            "surface-container-lowest": "#ffffff",
+            "surface-variant": "#dfe4df",
+            "tertiary-container": "#007b36",
+            "primary-container": "#c0392b",
+            "on-tertiary": "#ffffff",
+            "error": "#ba1a1a",
+            "secondary-fixed-dim": "#9fd3a7",
+            "surface-tint": "#b02d21",
+            "secondary-fixed": "#bbefc1",
+            "secondary-container": "#b8ecbf",
+            "on-surface": "#181d1a",
+            "inverse-primary": "#ffb4a9",
+            "surface-dim": "#d7dbd6",
+            "secondary": "#396844",
+            "surface-container-low": "#f0f5f0",
+            "tertiary-fixed-dim": "#3de273"
+          },
+          borderRadius: {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+          spacing: {
+            "margin": "3rem",
+            "margin-mobile": "1.25rem",
+            "space-lg": "1.5rem",
+            "space-md": "1rem",
+            "gutter-mobile": "1rem",
+            "space-xs": "0.25rem",
+            "gutter": "1.5rem",
+            "space-sm": "0.5rem",
+            "space-xl": "2.5rem"
+          },
+          fontFamily: {
+            "label-md": ["Plus Jakarta Sans", "sans-serif"],
+            "label-caption": ["Playfair Display", "serif"],
+            "headline-md": ["Playfair Display", "serif"],
+            "headline-sm": ["Playfair Display", "serif"],
+            "headline-lg-mobile": ["Playfair Display", "serif"],
+            "body-md": ["Plus Jakarta Sans", "sans-serif"],
+            "display-hero-mobile": ["Playfair Display", "serif"],
+            "subhead-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-lg": ["Playfair Display", "serif"],
+            "label-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "body-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "display-hero": ["Playfair Display", "serif"]
+          },
+          fontSize: {
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "600" }],
+            "label-caption": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "500" }],
+            "headline-sm": ["22px", { "lineHeight": "28px", "fontWeight": "500" }],
+            "headline-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-md": ["15px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "display-hero-mobile": ["38px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "subhead-lg": ["18px", { "lineHeight": "26px", "fontWeight": "600" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "body-lg": ["17px", { "lineHeight": "26px", "fontWeight": "400" }],
+            "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }],
+            "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }]
+          }
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .custom-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    /* Smooth focus rings matching DESIGN.md */
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: #C0392B !important;
+      box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.15) !important;
+    }
+    .modal-backdrop-blur {
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased font-body-md selection:bg-primary selection:text-on-primary min-h-screen relative">
+
+  <!-- ================= TOP APP BAR ================= -->
+  <header class="fixed top-0 left-0 right-0 z-40 bg-surface/90 dark:bg-inverse-surface/90 backdrop-blur-md shadow-sm border-b border-outline-variant/20 transition-all">
+    <div class="flex justify-between items-center px-4 sm:px-8 h-16 w-full max-w-7xl mx-auto">
+      <div class="flex items-center gap-3">
+        <!-- Drawer Toggle Button (Mobile/Tablet) -->
+        <button aria-label="Abrir menú de navegación" class="p-2 -ml-2 text-primary hover:text-primary-container transition-colors active:scale-95 lg:hidden" id="drawerToggle">
+          <span class="material-symbols-outlined text-2xl">menu</span>
+        </button>
+        
+        <!-- Brand Anchor -->
+        <a class="flex flex-col group" href="#">
+          <span class="font-headline-md text-headline-sm text-primary tracking-tight font-bold leading-none group-hover:text-primary-container transition-colors">Aldente</span>
+          <span class="text-[10px] uppercase tracking-wider text-secondary font-label-md">Son Verí Nou · Mallorca</span>
+        </a>
+      </div>
+
+      <!-- Desktop Navigation Links (Large Screens) -->
+      <nav class="hidden lg:flex items-center gap-8 font-label-lg text-label-lg text-on-surface-variant">
+        <a href="#carta" class="hover:text-primary transition-colors py-1">Carta Gastronómica</a>
+        <a href="#historia" class="hover:text-primary transition-colors py-1">Nuestra Historia</a>
+        <a href="#galeria" class="hover:text-primary transition-colors py-1">Galería</a>
+        <a href="#opiniones" class="hover:text-primary transition-colors py-1">Opiniones</a>
+        <a href="#contacto" class="hover:text-primary transition-colors py-1">Ubicación</a>
+      </nav>
+
+      <!-- Right Controls: Language Selector + Quick Reserve Action -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <div class="relative">
+          <select id="langSelector" aria-label="Seleccionar idioma" class="bg-surface-container text-on-surface text-label-md font-label-md rounded-full pl-3 pr-7 py-1.5 border border-outline-variant/30 focus:ring-1 focus:ring-primary appearance-none cursor-pointer">
+            <option value="es" selected>🇪🇸 ES</option>
+            <option value="ca">🏴󠁥󠁳󠁩󠁢󠁿 CA</option>
+            <option value="en">🇬🇧 EN</option>
+            <option value="de">🇩🇪 DE</option>
+          </select>
+          <span class="material-symbols-outlined absolute right-1.5 top-1/2 -translate-y-1/2 pointer-events-none text-sm text-on-surface-variant">arrow_drop_down</span>
+        </div>
+        
+        <button onclick="openReservationModal()" class="bg-primary hover:bg-primary-container text-on-primary px-4 py-2 rounded-full text-label-md font-label-md shadow-sm active:scale-95 transition-all flex items-center gap-1.5 cursor-pointer">
+          <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+          <span data-i18n="nav.reserve">Reservar</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= NAVIGATION DRAWER ================= -->
+  <div class="fixed inset-0 bg-on-background/50 modal-backdrop-blur z-50 hidden opacity-0 transition-opacity duration-300" id="drawerOverlay"></div>
+  <aside class="fixed inset-y-0 left-0 z-50 w-80 max-w-[85vw] p-6 flex flex-col justify-between bg-surface dark:bg-inverse-surface shadow-2xl rounded-r-3xl transform -translate-x-full transition-transform duration-300 ease-in-out" id="navigationDrawer">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-outline-variant/30">
+        <div>
+          <span class="font-headline-md text-headline-sm text-primary tracking-tight font-bold">Aldente</span>
+          <p class="text-body-sm text-on-surface-variant">Ristorante Italiano · Son Verí Nou</p>
+        </div>
+        <button class="p-2 rounded-full text-on-surface hover:bg-surface-container transition-colors" id="drawerClose" aria-label="Cerrar menú">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+      
+      <!-- Navigation Tab List -->
+      <nav class="mt-6 flex flex-col gap-2">
+        <a class="flex items-center gap-4 px-4 py-3 bg-secondary-container text-on-secondary-container rounded-full font-label-lg text-label-lg active:scale-98 transition-transform" href="#carta">
+          <span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+          <span data-i18n="drawer.menu">Carta Gastronómica</span>
+        </a>
+        <a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container rounded-full transition-colors active:scale-98" href="#historia">
+          <span class="material-symbols-outlined text-xl">auto_stories</span>
+          <span data-i18n="drawer.story">Nuestra Historia</span>
+        </a>
+        <a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container rounded-full transition-colors active:scale-98" href="#galeria">
+          <span class="material-symbols-outlined text-xl">photo_library</span>
+          <span data-i18n="drawer.gallery">Galería</span>
+        </a>
+        <a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container rounded-full transition-colors active:scale-98" href="#opiniones">
+          <span class="material-symbols-outlined text-xl">reviews</span>
+          <span data-i18n="drawer.reviews">Opiniones</span>
+        </a>
+        <a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container rounded-full transition-colors active:scale-98" href="#contacto">
+          <span class="material-symbols-outlined text-xl">location_on</span>
+          <span data-i18n="drawer.contact">Ubicación &amp; Contacto</span>
+        </a>
+      </nav>
+    </div>
+
+    <!-- Drawer Footer Information -->
+    <div class="pt-6 border-t border-outline-variant/30 space-y-3">
+      <div class="flex items-center gap-2 text-body-sm text-secondary font-medium">
+        <span class="material-symbols-outlined text-sm">schedule</span>
+        <span>Abierto hoy desde las 12:45</span>
+      </div>
+      <a class="flex items-center justify-center gap-2 w-full py-2.5 rounded-full border border-secondary text-secondary font-label-md text-label-md hover:bg-secondary hover:text-on-secondary transition-all" href="tel:971446259">
+        <span class="material-symbols-outlined text-base">call</span>
+        <span>Llamar al 971 44 62 59</span>
+      </a>
+      <button onclick="closeDrawer(); openReservationModal();" class="flex items-center justify-center gap-2 w-full py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container shadow-sm transition-all">
+        <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+        <span>Reservar Mesa</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- ================= MAIN CONTENT WRAPPER ================= -->
+  <main class="pt-16 pb-12 overflow-x-hidden">
+
+    <!-- 1. HERO SECTION -->
+    <section class="relative min-h-[580px] lg:min-h-[640px] flex items-center px-4 sm:px-8 py-16 overflow-hidden bg-surface-container-high">
+      <!-- Background Image with Ambient Mediterranean Lighting -->
+      <div class="absolute inset-0 z-0">
+        <img class="w-full h-full object-cover object-center filter brightness-[0.88] contrast-[1.05]" data-alt="Close up artisanal authentic Neapolitan pizza baking inside a traditional wood-fired stone oven" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPsMHg52ZrF4PLny5dxs-rgkMvyE_pp1vXbGJlwDydDxTtfT9OZF1Q94H5rzw_XYlmk3bA7SakaI_ILi8svcj4LZK7jHBFpmbwOO8JvIFXC7w52TcbVVjwicKalXXy3tg8Df_ch2AZKYSANVdxKREFcn--oOsoJ0_Co6DF3FaLBwvk__0WJQSovRGRITk75MqyXnKe_wi-pWw-N3iXDuYTifiCI6q8HUFBgSC2ExVwQ8S35CHYxCqW" alt="Pizza al horno de piedra Ristorante Aldente Mallorca"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/40 to-transparent"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-primary-fixed-variant/40 to-transparent mix-blend-multiply"></div>
+      </div>
+
+      <!-- Hero Content -->
+      <div class="relative z-10 w-full max-w-xl mx-auto lg:mx-0 lg:ml-12 text-on-primary">
+        <!-- Location Pill Badge -->
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest/20 backdrop-blur-md border border-on-primary/20 text-on-primary text-label-md font-label-md mb-4 shadow-sm">
+          <span class="material-symbols-outlined text-sm text-tertiary-fixed" style="font-variation-settings: 'FILL' 1;">location_on</span>
+          <span>Son Verí Nou, Mallorca</span>
+        </div>
+
+        <h1 id="heroTitle" class="font-display-hero-mobile lg:font-display-hero text-display-hero-mobile lg:text-display-hero leading-tight mb-3 text-surface-container-lowest drop-shadow-sm font-semibold">
+          Auténtica cocina italiana en Mallorca
+        </h1>
+        <p id="heroSubtitle" class="font-body-lg text-body-lg text-surface-container-low mb-6 max-w-md font-normal leading-relaxed opacity-95">
+          Pasta fresca hecha a mano, pizzas crujientes al horno de piedra y el calor de la verdadera hospitalidad costera.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row gap-3 pt-1">
+          <!-- WhatsApp / Instant Booking Action Button -->
+          <button onclick="openReservationModal()" class="h-13 min-h-[52px] px-6 rounded-full bg-[#25D366] hover:bg-[#1EBE5B] text-white flex items-center justify-center gap-2.5 font-label-lg text-label-lg shadow-lg active:scale-95 transition-all cursor-pointer">
+            <span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">chat</span>
+            <span data-i18n="hero.reserveWhatsapp">Reservar por WhatsApp</span>
+          </button>
+          
+          <!-- Outline Secondary Action -->
+          <a class="h-13 min-h-[52px] px-6 rounded-full border-1.5 border-surface-container-lowest/80 text-surface-container-lowest hover:bg-surface-container-lowest hover:text-on-surface flex items-center justify-center gap-2 font-label-lg text-label-lg backdrop-blur-xs transition-all active:scale-95" href="#carta">
+            <span class="material-symbols-outlined text-xl">restaurant_menu</span>
+            <span data-i18n="hero.viewMenu">Ver la carta</span>
+          </a>
+        </div>
+
+        <!-- Highlight Informative Ribbon -->
+        <div class="mt-6 pt-4 border-t border-surface-container-lowest/20 flex items-center gap-3 text-body-sm text-surface-container-low">
+          <div class="flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-tertiary-fixed text-sm">schedule</span>
+            <span>Desde las 12:45</span>
+          </div>
+          <span class="opacity-40">•</span>
+          <div class="flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-tertiary-fixed text-sm">euro</span>
+            <span>10 - 30 € por persona</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. QUICK FACTS GRID (2x2 Bento) -->
+    <section class="px-4 sm:px-8 -mt-6 relative z-20 max-w-5xl mx-auto">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+        <!-- Fact 1: Hours -->
+        <div class="bg-surface-container-lowest p-4 sm:p-5 rounded-2xl shadow-sm border border-outline-variant/20 flex flex-col justify-between hover:shadow-md transition-shadow">
+          <div class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center mb-2">
+            <span class="material-symbols-outlined text-xl">schedule</span>
+          </div>
+          <div>
+            <span class="text-label-md font-label-md text-on-surface-variant block uppercase tracking-wider">Horario</span>
+            <span class="font-subhead-lg text-subhead-lg text-on-surface font-semibold">Desde 12:45</span>
+          </div>
+        </div>
+
+        <!-- Fact 2: Phone -->
+        <a class="bg-surface-container-lowest p-4 sm:p-5 rounded-2xl shadow-sm border border-outline-variant/20 flex flex-col justify-between hover:border-secondary hover:shadow-md transition-all" href="tel:971446259">
+          <div class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center mb-2">
+            <span class="material-symbols-outlined text-xl">call</span>
+          </div>
+          <div>
+            <span class="text-label-md font-label-md text-on-surface-variant block uppercase tracking-wider">Teléfono</span>
+            <span class="font-subhead-lg text-subhead-lg text-on-surface font-semibold">971 44 62 59</span>
+          </div>
+        </a>
+
+        <!-- Fact 3: Address -->
+        <a class="bg-surface-container-lowest p-4 sm:p-5 rounded-2xl shadow-sm border border-outline-variant/20 flex flex-col justify-between hover:border-primary hover:shadow-md transition-all" href="#contacto">
+          <div class="w-9 h-9 rounded-full bg-primary-fixed text-on-primary-fixed-variant flex items-center justify-center mb-2">
+            <span class="material-symbols-outlined text-xl">pin_drop</span>
+          </div>
+          <div>
+            <span class="text-label-md font-label-md text-on-surface-variant block uppercase tracking-wider">Ubicación</span>
+            <span class="font-body-md text-body-md text-on-surface font-medium leading-snug">Rambla 2, Local 2</span>
+          </div>
+        </a>
+
+        <!-- Fact 4: Rating -->
+        <a href="#opiniones" class="bg-surface-container-lowest p-4 sm:p-5 rounded-2xl shadow-sm border border-outline-variant/20 flex flex-col justify-between hover:shadow-md transition-all">
+          <div class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center mb-2">
+            <span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+          </div>
+          <div>
+            <div class="flex items-center gap-1 text-amber-500">
+              <span class="font-subhead-lg text-subhead-lg font-bold text-on-surface">4.8</span>
+              <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+            </div>
+            <span class="text-label-md font-label-md text-on-surface-variant block">81 en Google</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- 3. PLATOS ESTRELLA (Lo que más piden) -->
+    <section class="py-12 sm:py-16 px-4 sm:px-8 max-w-7xl mx-auto">
+      <div class="flex items-end justify-between mb-8">
+        <div>
+          <span class="text-label-md font-label-md uppercase tracking-widest text-primary font-bold">Nuestra Selección</span>
+          <h2 class="font-headline-lg-mobile lg:font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface font-semibold mt-1">Lo que más piden</h2>
+        </div>
+        <span class="text-body-sm text-secondary font-medium hidden sm:inline-block">Recetas tradicionales hechas al momento</span>
+      </div>
+
+      <!-- Dish Grid / Mobile Snap Swiper -->
+      <div class="flex sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-5 overflow-x-auto pb-4 custom-scrollbar snap-x snap-mandatory">
+        
+        <!-- Dish 1 -->
+        <article class="min-w-[280px] sm:min-w-0 snap-start bg-surface-container-lowest rounded-2xl overflow-hidden border border-outline-variant/20 shadow-sm flex flex-col justify-between group hover:shadow-md transition-all">
+          <div class="relative h-48 overflow-hidden">
+            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiBXokNDO-cMUdSoK_PiJBu46K93QUBObMC3RMdF89uJJirqLrm08vSadV_vz_a7IYYEKH-TwoZXCpdjWwegJ4R8rKhpq_xAc9tVtDTEIjytxyBEEBUYV0So-b5enwjLjJDETA2C2aE_HpOm-sPX1yemck2B-IzZMwIw_g8uv9_-fnkabiZTlbhsX0IVf0QXEViJzfsNvox-MnjdHpXRN_zEib8DHGC84_WMbtDfinFiNr8mnbEagf" alt="Pizza Pepperoni"/>
+            <span class="absolute top-3 left-3 bg-primary-container text-on-primary text-[11px] font-label-md px-2.5 py-1 rounded-full uppercase tracking-wider shadow-sm">Favorito</span>
+          </div>
+          <div class="p-5 flex flex-col justify-between flex-grow">
+            <div>
+              <div class="flex items-baseline justify-between mb-2">
+                <h3 class="font-headline-sm text-headline-sm text-on-surface">Pizza Pepperoni</h3>
+                <span class="font-subhead-lg text-subhead-lg text-secondary font-bold">14,50 €</span>
+              </div>
+              <p class="text-body-md text-on-surface-variant font-normal leading-relaxed">
+                Masa fermentada 48h, salsa de tomate San Marzano, mozzarella fior di latte y pepperoni ligeramente picante.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-outline-variant/15 flex items-center gap-2">
+              <span class="px-2.5 py-0.5 rounded-full bg-secondary/10 text-secondary text-[11px] font-label-md">Artesanal</span>
+              <span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant text-[11px] font-label-md">Horno Piedra</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dish 2 -->
+        <article class="min-w-[280px] sm:min-w-0 snap-start bg-surface-container-lowest rounded-2xl overflow-hidden border border-outline-variant/20 shadow-sm flex flex-col justify-between group hover:shadow-md transition-all">
+          <div class="relative h-48 overflow-hidden">
+            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrYycWDXdLKJoUnuwhNKPy7Ca6xyesPJSscWPjz4B-HXyQA7SgyhoSZrkrbksxvlX5elVrmHI4Cpmonpe0mKdbJMPgVIQRf5Dg7iT4msYc2iWYm-TGfQY6c3V4vyHNJULAGoC8ZOj4boZXq4BES0bkvPIx_IRziXNWv6Wi60D4NJORQcjoZZfndnj1Y-zfk10dGxJfRd2A8HiSzYFSZ6mToyzt5nha2v90gZ_yN09QPBMsCkzLyn3J" alt="Caprese di Bufala"/>
+            <span class="absolute top-3 left-3 bg-secondary text-on-secondary text-[11px] font-label-md px-2.5 py-1 rounded-full uppercase tracking-wider shadow-sm">Fresco</span>
+          </div>
+          <div class="p-5 flex flex-col justify-between flex-grow">
+            <div>
+              <div class="flex items-baseline justify-between mb-2">
+                <h3 class="font-headline-sm text-headline-sm text-on-surface">Caprese di Bufala</h3>
+                <span class="font-subhead-lg text-subhead-lg text-secondary font-bold">12,90 €</span>
+              </div>
+              <p class="text-body-md text-on-surface-variant font-normal leading-relaxed">
+                Mozzarella di bufala campana DOP, tomates de huerto mallorquín, albahaca fresca y aceite de oliva virgen extra.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-outline-variant/15 flex items-center gap-2">
+              <span class="px-2.5 py-0.5 rounded-full bg-secondary/10 text-secondary text-[11px] font-label-md">Vegetariano</span>
+              <span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant text-[11px] font-label-md">Km 0</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dish 3 -->
+        <article class="min-w-[280px] sm:min-w-0 snap-start bg-surface-container-lowest rounded-2xl overflow-hidden border border-outline-variant/20 shadow-sm flex flex-col justify-between group hover:shadow-md transition-all">
+          <div class="relative h-48 overflow-hidden">
+            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCo6AAXEnydX0ZYzKhR6M_vPDLTo4DC4LXjjyDpJTw7cKz5U-d5W3jXPvWUg2GpZOFJnxke0aMhpnnKlPbHD1tmM2wA3m3e9BwgZrU4s8mVMBF34vwaYw3_c4F72P-1DsHBB1asAFY-JaejfdJenK2syzO4RHUoOQMSe7s3C3QSnPMFSQSd1sOkoyqcD7WWAyUksG_8LkhrEnYLFQeVeycAVkNtRAYfF9LQkb7pcbvNZ68PvD164Kcq" alt="Entrecôte a la Parrilla"/>
+            <span class="absolute top-3 left-3 bg-primary text-on-primary text-[11px] font-label-md px-2.5 py-1 rounded-full uppercase tracking-wider shadow-sm">Especialidad</span>
+          </div>
+          <div class="p-5 flex flex-col justify-between flex-grow">
+            <div>
+              <div class="flex items-baseline justify-between mb-2">
+                <h3 class="font-headline-sm text-headline-sm text-on-surface">Entrecôte a la Parrilla</h3>
+                <span class="font-subhead-lg text-subhead-lg text-secondary font-bold">22,50 €</span>
+              </div>
+              <p class="text-body-md text-on-surface-variant font-normal leading-relaxed">
+                Carne tierna madurada a la brasa con romero silvestre, patatas rústicas al horno y pimientos asados.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-outline-variant/15 flex items-center gap-2">
+              <span class="px-2.5 py-0.5 rounded-full bg-primary/10 text-primary text-[11px] font-label-md">Carnes Selectas</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dish 4 -->
+        <article class="min-w-[280px] sm:min-w-0 snap-start bg-surface-container-lowest rounded-2xl overflow-hidden border border-outline-variant/20 shadow-sm flex flex-col justify-between group hover:shadow-md transition-all">
+          <div class="relative h-48 overflow-hidden">
+            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0_LdhLHLpxEtqeRRYrhfFzaFSTFTzqpS2c2HaWWqYAnJXeGfXZoj48on2kHJ3EO3i59iAkFwOnCy_GWUS3gqGXKHys6mPYe4K2MVrJOlFERNPJwS3J1ieScvVmZ3c4Uu0kyMtd6JXlaP9NK_qcNnUTYBsRwKnqD9ejrI_0nkYUSHdzGwpaJGXMixc1LGrGmaPSOfXOO3muwklrfpW7-HdxOx-W3GkNTjC6G6NKlpjt2pNxOnPZ2jj" alt="Gambas al Ajillo"/>
+          </div>
+          <div class="p-5 flex flex-col justify-between flex-grow">
+            <div>
+              <div class="flex items-baseline justify-between mb-2">
+                <h3 class="font-headline-sm text-headline-sm text-on-surface">Gambas al Ajillo</h3>
+                <span class="font-subhead-lg text-subhead-lg text-secondary font-bold">13,50 €</span>
+              </div>
+              <p class="text-body-md text-on-surface-variant font-normal leading-relaxed">
+                Langostinos seleccionados salteados en cazuela de barro con aceite de oliva virgen, ajo laminado y toque de guindilla.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-outline-variant/15 flex items-center gap-2">
+              <span class="px-2.5 py-0.5 rounded-full bg-secondary/10 text-secondary text-[11px] font-label-md">Marisco Fresco</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dish 5 -->
+        <article class="min-w-[280px] sm:min-w-0 snap-start bg-surface-container-lowest rounded-2xl overflow-hidden border border-outline-variant/20 shadow-sm flex flex-col justify-between group hover:shadow-md transition-all">
+          <div class="relative h-48 overflow-hidden">
+            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRVFMI5uimRxjnaPteecxC5e1hiNONLZs0xZPfvMqoeoQcgfdw_gd5Qxao3o2694OkPmFPUrnheRqe1C1ucjPn8EPV1n1kQa_Oo0S2Cys-gEo5Lmg2YxDVaBSkwywMcc6Yx4OdRyoE5H9DnLxJSFXTjoyBIiKOeleXk6zJmM0g32wO9VMk7f8dZbvJ50vfimgxlAjN0MqeYeBvPEBVAjhpo1BQ34hDvhmBxCQwG37CRE8PrsCIIQVn" alt="Tagliatelle Bolognese"/>
+            <span class="absolute top-3 left-3 bg-primary-container text-on-primary text-[11px] font-label-md px-2.5 py-1 rounded-full uppercase tracking-wider shadow-sm">Receta Clásica</span>
+          </div>
+          <div class="p-5 flex flex-col justify-between flex-grow">
+            <div>
+              <div class="flex items-baseline justify-between mb-2">
+                <h3 class="font-headline-sm text-headline-sm text-on-surface">Tagliatelle Bolognese</h3>
+                <span class="font-subhead-lg text-subhead-lg text-secondary font-bold">13,90 €</span>
+              </div>
+              <p class="text-body-md text-on-surface-variant font-normal leading-relaxed">
+                Pasta fresca al huevo elaborada en casa, ragù clásico estofado durante 4 horas y virutas de Parmigiano Reggiano.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-outline-variant/15 flex items-center gap-2">
+              <span class="px-2.5 py-0.5 rounded-full bg-primary/10 text-primary text-[11px] font-label-md">Pasta Fresca</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dish 6 -->
+        <article class="min-w-[280px] sm:min-w-0 snap-start bg-surface-container-lowest rounded-2xl overflow-hidden border border-outline-variant/20 shadow-sm flex flex-col justify-between group hover:shadow-md transition-all">
+          <div class="relative h-48 overflow-hidden">
+            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACedB2sV-GOWNb4xtWsY-p55kmhvCbIKpcX4oisTQvHt3JxEQeu7VmFhv9_-KhgsILyuY-Jb034-X1pDQOzedxsf7tzZo2yRJDymnv411Hed0DzDg9Ig2szjOSONfUxBcKQVw96XxnQgxzXgTf9C_KUhd-sVCaQMsXJwEWBdmOwmncrAhGgxhAIZBnVm9xn70FAUOkGEehu7QlU4IDj1M7qM-K1PMx7wu2IBlsLn4jceyJLUlzekTd" alt="Tiramisù Tradizionale"/>
+            <span class="absolute top-3 left-3 bg-secondary text-on-secondary text-[11px] font-label-md px-2.5 py-1 rounded-full uppercase tracking-wider shadow-sm">Postre</span>
+          </div>
+          <div class="p-5 flex flex-col justify-between flex-grow">
+            <div>
+              <div class="flex items-baseline justify-between mb-2">
+                <h3 class="font-headline-sm text-headline-sm text-on-surface">Tiramisù Tradizionale</h3>
+                <span class="font-subhead-lg text-subhead-lg text-secondary font-bold">6,50 €</span>
+              </div>
+              <p class="text-body-md text-on-surface-variant font-normal leading-relaxed">
+                Receta clásica con auténtico mascarpone italiano, café espresso recién molido y bizcochos soletilla caseros.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-outline-variant/15 flex items-center gap-2">
+              <span class="px-2.5 py-0.5 rounded-full bg-secondary/10 text-secondary text-[11px] font-label-md">Dolci Casero</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Action Button Centered -->
+      <div class="mt-8 text-center">
+        <button onclick="openMenuModal('todos')" class="inline-flex items-center gap-2 px-8 py-3.5 rounded-full border-1.5 border-secondary text-secondary hover:bg-secondary hover:text-on-secondary font-label-lg text-label-lg transition-all active:scale-95 shadow-xs cursor-pointer">
+          <span class="material-symbols-outlined text-lg">restaurant_menu</span>
+          <span>Ver carta gastronómica completa</span>
+          <span class="material-symbols-outlined text-lg">arrow_forward</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- 4. SOBRE NOSOTROS (Our Story & Values) -->
+    <section class="py-12 sm:py-16 bg-surface-container-low px-4 sm:px-8" id="historia">
+      <div class="max-w-5xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-center">
+          <!-- Image -->
+          <div class="relative rounded-3xl overflow-hidden shadow-sm border border-outline-variant/30">
+            <img class="w-full h-80 md:h-[420px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrhkpuSUYHMUPZ9SbCLYsSNGhgLJtMMgV_EBVC6p2IBccnCxym76afpGKvv0v7ZqDmwRAOOGr2550R0HdnSvXuEVZqZTJ_yqjBjLZI3POyFORKPu6Unp4pjy6bULPWirWzswxRTz8ivUbI4Ybt9mPbhSfJ0A1Ae6TzLSRqcT1jLewoTBG5QoIvy6VQwChP2mrQoemE8EPqJQVitjUZGT6aK6ul8Umvjx18oF3I1e6BVpdOVGpNWhCU" alt="Interior Ristorante Aldente Mallorca"/>
+            <div class="absolute bottom-4 left-4 bg-surface/90 backdrop-blur-md px-4 py-2 rounded-full border border-outline-variant/30 text-label-md font-label-md text-on-surface flex items-center gap-2 shadow-sm">
+              <span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">eco</span>
+              <span>Pasión artesanal en Son Verí Nou</span>
+            </div>
+          </div>
+
+          <!-- Narrative -->
+          <div>
+            <span class="text-label-md font-label-md uppercase tracking-widest text-primary font-bold">Nuestra Historia</span>
+            <h2 class="font-headline-lg-mobile lg:font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface font-semibold mt-1 mb-4">
+              Tradición italiana bajo el sol de Mallorca
+            </h2>
+            <p class="text-body-md text-on-surface-variant mb-4 leading-relaxed">
+              En <strong class="text-on-surface font-semibold">Ristorante Aldente</strong> unimos la memoria gastronómica de Italia con la frescura inigualable de la isla balear. Cada masa se estira a mano y cada salsa respeta los tiempos lentos de la auténtica cocina familiar.
+            </p>
+            <p class="text-body-md text-on-surface-variant mb-6 leading-relaxed">
+              Un rincón acogedor donde disfrutar con amigos, familia o en pareja, saboreando copas de vino bajo un trato cercano, sincero y siempre hospitalario.
+            </p>
+
+            <!-- 3 Pillars -->
+            <div class="space-y-4">
+              <div class="flex items-start gap-3.5">
+                <div class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 mt-0.5">
+                  <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">nutrition</span>
+                </div>
+                <div>
+                  <h4 class="font-subhead-lg text-body-md text-on-surface font-semibold">Ingredientes frescos</h4>
+                  <p class="text-body-sm text-on-surface-variant">Productos importados de Italia y huerta mallorquina de temporada.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3.5">
+                <div class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 mt-0.5">
+                  <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">favorite</span>
+                </div>
+                <div>
+                  <h4 class="font-subhead-lg text-body-md text-on-surface font-semibold">Servicio cercano</h4>
+                  <p class="text-body-sm text-on-surface-variant">Atención sincera, multilingüe y siempre lista para hacerte sentir en casa.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3.5">
+                <div class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 mt-0.5">
+                  <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">wine_bar</span>
+                </div>
+                <div>
+                  <h4 class="font-subhead-lg text-body-md text-on-surface font-semibold">Ambiente agradable</h4>
+                  <p class="text-body-sm text-on-surface-variant">Tranquilidad mediterránea a solo minutos de la costa y calas de Llucmajor.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CARTA MULTILINGÜE -->
+    <section class="py-12 sm:py-16 px-4 sm:px-8 max-w-4xl mx-auto" id="carta">
+      <div class="text-center mb-8">
+        <span class="text-label-md font-label-md uppercase tracking-widest text-primary font-bold">Carta Gastronómica</span>
+        <h2 class="font-headline-lg-mobile lg:font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface font-semibold mt-1">
+          Nuestra carta en tu idioma
+        </h2>
+        <p class="text-body-md text-on-surface-variant mt-2 max-w-md mx-auto">
+          Consulta nuestros platos completos, opciones sin gluten, pastas caseras, carnes, pescados y vinos en tu lengua preferida.
+        </p>
+      </div>
+
+      <!-- 4 Multilingual Action Cards -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3.5 sm:gap-4">
+        <!-- Español -->
+        <button onclick="openMenuModal('todos', 'es')" class="p-5 bg-surface-container-lowest rounded-2xl border border-outline-variant/30 shadow-xs hover:border-primary hover:shadow-md active:scale-98 transition-all flex flex-col items-center text-center cursor-pointer">
+          <span class="text-3xl mb-2">🇪🇸</span>
+          <span class="font-headline-sm text-subhead-lg text-on-surface font-semibold">Español</span>
+          <span class="text-body-sm text-on-surface-variant mt-1">Ver carta digital</span>
+          <span class="material-symbols-outlined text-primary text-base mt-2">restaurant_menu</span>
+        </button>
+
+        <!-- Català -->
+        <button onclick="openMenuModal('todos', 'ca')" class="p-5 bg-surface-container-lowest rounded-2xl border border-outline-variant/30 shadow-xs hover:border-primary hover:shadow-md active:scale-98 transition-all flex flex-col items-center text-center cursor-pointer">
+          <span class="text-3xl mb-2">🏴󠁥󠁳󠁩󠁢󠁿</span>
+          <span class="font-headline-sm text-subhead-lg text-on-surface font-semibold">Català</span>
+          <span class="text-body-sm text-on-surface-variant mt-1">Consultar carta</span>
+          <span class="material-symbols-outlined text-primary text-base mt-2">restaurant_menu</span>
+        </button>
+
+        <!-- English -->
+        <button onclick="openMenuModal('todos', 'en')" class="p-5 bg-surface-container-lowest rounded-2xl border border-outline-variant/30 shadow-xs hover:border-primary hover:shadow-md active:scale-98 transition-all flex flex-col items-center text-center cursor-pointer">
+          <span class="text-3xl mb-2">🇬🇧</span>
+          <span class="font-headline-sm text-subhead-lg text-on-surface font-semibold">English</span>
+          <span class="text-body-sm text-on-surface-variant mt-1">Browse our menu</span>
+          <span class="material-symbols-outlined text-primary text-base mt-2">restaurant_menu</span>
+        </button>
+
+        <!-- Deutsch -->
+        <button onclick="openMenuModal('todos', 'de')" class="p-5 bg-surface-container-lowest rounded-2xl border border-outline-variant/30 shadow-xs hover:border-primary hover:shadow-md active:scale-98 transition-all flex flex-col items-center text-center cursor-pointer">
+          <span class="text-3xl mb-2">🇩🇪</span>
+          <span class="font-headline-sm text-subhead-lg text-on-surface font-semibold">Deutsch</span>
+          <span class="text-body-sm text-on-surface-variant mt-1">Speisekarte</span>
+          <span class="material-symbols-outlined text-primary text-base mt-2">restaurant_menu</span>
+        </button>
+      </div>
+
+      <!-- Price Indicator Banner -->
+      <div class="mt-6 p-4 sm:p-5 rounded-2xl bg-surface-container border border-outline-variant/20 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
+        <div class="flex items-center gap-2.5">
+          <span class="material-symbols-outlined text-secondary text-xl">payments</span>
+          <span class="text-body-md text-on-surface font-medium">Precio medio: 10 - 30 € por comensal</span>
+        </div>
+        <span class="text-label-md font-label-md text-secondary bg-secondary-container px-3 py-1 rounded-full">Excelente relación calidad-precio</span>
+      </div>
+    </section>
+
+    <!-- 6. MOSAIC GALLERY -->
+    <section class="py-12 sm:py-16 px-4 sm:px-8 max-w-7xl mx-auto" id="galeria">
+      <div class="mb-8">
+        <span class="text-label-md font-label-md uppercase tracking-widest text-primary font-bold">Ambiente &amp; Sabores</span>
+        <h2 class="font-headline-lg-mobile lg:font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface font-semibold mt-1">Galería de momentos</h2>
+      </div>
+
+      <!-- Bento-style Asymmetric Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-3.5 sm:gap-4">
+        <div class="h-48 md:h-64 rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-shadow group">
+          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHzPASfrmoacnKQG1jRS7jAkz4D8t1N7jv3YNxrYv6L-dzf3vu90IUcsababORH7U356kapmJ_ZLadWhllpHrDC4wEk_F2EJ4eoOm5FPr8mjA5omY7FIaFSZoBWjMZF-eRI4_gk9Jn4gc1QE1H6rNUMQyjkAdpgsXajf-k53NU3oO2wKamY2JbJSx-WZP4XlJJgIh4ciD34qoDrg_qDtI_uHxcFKQNkkTYmOzWqLCWfwlAJOBILJ49" alt="Pizza al horno artesanal"/>
+        </div>
+        <div class="h-48 md:h-64 rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-shadow group">
+          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJgAwJkY_U72egtKtv2fgMb-JrEG5yADn1hY2afrirZnRUU1oXJrLYzVGCu-E-BQqzF1uKh8TCt0-Yu71k1o8Iui3txbKjnGynqr3GjCYn9nlMngR4aZl_cBZegRcV4U6aAjpvGvzCRUMbAuDrr0ZO5JTl14IECYxrTQOhhlG75fJXzph8a5fNjwzL-aFejtBtO5V3_E26JpyicOQfEQlr7VeNT8Z9YpjdWk-PCX-hjdEOXsJHz2U4" alt="Cócteles y aperitivos"/>
+        </div>
+        <div class="h-48 md:h-64 rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-shadow group col-span-2 md:col-span-1">
+          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA14H74ja0k8oqRPEY5IVgAVIaMeKJYzG3xHWuUsdBtlNXEl-AuQfF5fMDJOiVJZ6EzYkgdTKJ36WyJtfxiEJla-yt07kGN4zMc7lTZIIdmIiLes86PU4USyx4A8KHyFmoqBUxgt1UjUT-nynIq9UUyFG89wWJadozqFP0qTuHTSzOM9WfNbvdOQ9J-8Sf5aoZg51ryy4Pmd13HloN01OzG-U6Nr_vpZAh2cuPzQRHybkECvOxTDneg" alt="Pasta al pesto casera"/>
+        </div>
+        <div class="h-48 md:h-64 rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-shadow group">
+          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAP0MrI4KvgVED30LCIK45y_WkMXGLWfHIS8tyeV6k58lnOWSBRzoyfR0U42ljeL6KJjv8OZJTLdisPbHdDkDMPkEUYZvDKfA8Vnp7-lbAncxjAyQjyKDQXbeJdWY_jq7Dkjle1UzI03sZ04yljzbUQdH_6GjNooZm4tsVJCP9jyrvOczcEJzNfhFNzdWLeBD1G9RPoEEJRJzdvv7Y-ZORLog_yV96dfK2mLfe01WzZ56PLX0xqlVSC" alt="Salón interior acogedor"/>
+        </div>
+        <div class="h-48 md:h-64 rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-shadow group">
+          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpj_OBP9YOHZ_HdprHliRTMRIuDvjFiZ11qbLsiBwRxYAw07_uorZ8pENJtSrbOb53wixDiNRml0TaIjE8lzeRiQA0CbCSVNg1rdT1uDBcZKlzUfPIc_oyiA8X3rh0bCjzD7hz2Gm9_0J9Gd0FpXkXtdIndHEMq6kzYAr8M_gtlfokte2_Al_29b6rWwG24yHXLOrRbEVS3wq0K_Al4FYswHLXb4S_nSkvaqC-t4oOaoN0jGOw-sD3" alt="Fondant de chocolate"/>
+        </div>
+        <div class="h-48 md:h-64 rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-shadow group col-span-2 md:col-span-1">
+          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCS91mTuDXH9Rfs0Z5kaRCeoRZnOYq5lLvwSQVBYpDgYSLlFeMXh_NLbqvkmOU1DDElXEFw0ISQTXfMUV-JOX7yYKvUdo7SonkwInWmkTZzUKQLsPEyxQkyl-ZMwvZWyiIgYNlj90i-L2sL6zB1yrtfNYn1OCDRjh9gOCu6VoHYkLZYhbvc3n_dNQO7qD2FmPAdWID5nU5GCc_68bMdflojHcbRYDoygkx-YV1Go1CvYfNPJpveJR_t" alt="Vino blanco terraza"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. REVIEWS (Lo que dicen nuestros clientes) -->
+    <section class="py-12 sm:py-16 bg-surface-container-low px-4 sm:px-8" id="opiniones">
+      <div class="max-w-5xl mx-auto">
+        <!-- Header with Google Badge -->
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
+          <div>
+            <span class="text-label-md font-label-md uppercase tracking-widest text-primary font-bold">Experiencias Reales</span>
+            <h2 class="font-headline-lg-mobile lg:font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface font-semibold mt-1">Lo que dicen nuestros clientes</h2>
+          </div>
+          <!-- Google Rating Stamp -->
+          <div class="inline-flex items-center gap-3 bg-surface-container-lowest px-4 py-2.5 rounded-full border border-outline-variant/30 shadow-xs self-start">
+            <div class="flex text-amber-500">
+              <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+            </div>
+            <div class="text-left">
+              <span class="text-label-md font-label-md text-on-surface font-bold">4.8 / 5</span>
+              <span class="text-body-sm text-on-surface-variant block leading-none">81 reseñas en Google</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <!-- Review 1: Tania S. -->
+          <div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/20 shadow-xs flex flex-col justify-between hover:shadow-md transition-shadow">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex items-center gap-2.5">
+                  <div class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary-container font-bold text-xs flex items-center justify-center">TS</div>
+                  <div>
+                    <h3 class="font-subhead-lg text-body-md font-semibold text-on-surface">Tania S.</h3>
+                    <span class="text-xs text-on-surface-variant flex items-center gap-1">🇩🇪 Alemania · Google Review</span>
+                  </div>
+                </div>
+                <div class="flex text-amber-500">
+                  <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                </div>
+              </div>
+              <p class="text-body-md text-on-surface-variant italic font-serif leading-relaxed">
+                “Hier kann man einfach alles empfehlen! Top Essen, super Service, schönes Ambiente! Wir kommen bei jedem Mallorca-Urlaub wieder.”
+              </p>
+            </div>
+          </div>
+
+          <!-- Review 2: Mette -->
+          <div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/20 shadow-xs flex flex-col justify-between hover:shadow-md transition-shadow">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex items-center gap-2.5">
+                  <div class="w-9 h-9 rounded-full bg-primary-fixed text-on-primary-fixed font-bold text-xs flex items-center justify-center">M</div>
+                  <div>
+                    <h3 class="font-subhead-lg text-body-md font-semibold text-on-surface">Mette</h3>
+                    <span class="text-xs text-on-surface-variant flex items-center gap-1">🇬🇧 Reino Unido · Google Review</span>
+                  </div>
+                </div>
+                <div class="flex text-amber-500">
+                  <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                </div>
+              </div>
+              <p class="text-body-md text-on-surface-variant italic font-serif leading-relaxed">
+                “Great food, reasonable prices, lovely staff. Authentic pizza, tender meat dishes and great desserts. Highly recommended in Son Verí!”
+              </p>
+            </div>
+          </div>
+
+          <!-- Review 3: Claudia -->
+          <div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/20 shadow-xs flex flex-col justify-between hover:shadow-md transition-shadow">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex items-center gap-2.5">
+                  <div class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary-container font-bold text-xs flex items-center justify-center">C</div>
+                  <div>
+                    <h3 class="font-subhead-lg text-body-md font-semibold text-on-surface">Claudia</h3>
+                    <span class="text-xs text-on-surface-variant flex items-center gap-1">🇪🇸 España · Google Review</span>
+                  </div>
+                </div>
+                <div class="flex text-amber-500">
+                  <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                </div>
+              </div>
+              <p class="text-body-md text-on-surface-variant italic font-serif leading-relaxed">
+                “Comida súper fina, servicio rápido y competente. Las pastas caseras y los entrantes son deliciosos. Repetiremos seguro.”
+              </p>
+            </div>
+          </div>
+
+          <!-- Review 4: Messaline -->
+          <div class="bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant/20 shadow-xs flex flex-col justify-between hover:shadow-md transition-shadow">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex items-center gap-2.5">
+                  <div class="w-9 h-9 rounded-full bg-primary-fixed text-on-primary-fixed font-bold text-xs flex items-center justify-center">M</div>
+                  <div>
+                    <h3 class="font-subhead-lg text-body-md font-semibold text-on-surface">Messaline</h3>
+                    <span class="text-xs text-on-surface-variant flex items-center gap-1">🇫🇷 Francia · Google Review</span>
+                  </div>
+                </div>
+                <div class="flex text-amber-500">
+                  <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                </div>
+              </div>
+              <p class="text-body-md text-on-surface-variant italic font-serif leading-relaxed">
+                “La nourriture est fraîche, excellente et de très bonne qualité. Accueil chaleureux et cadre très agradable pour un dîner relaxant.”
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. BLOQUE DESTACADO DE RESERVA POR WHATSAPP -->
+    <section class="py-12 sm:py-16 px-4 sm:px-8 max-w-4xl mx-auto">
+      <div class="bg-surface-container-lowest rounded-3xl p-6 sm:p-10 border-2 border-primary/20 shadow-md relative overflow-hidden">
+        <!-- Subtle Background Decorative Graphic -->
+        <div class="absolute -right-12 -bottom-12 w-48 h-48 bg-primary/5 rounded-full pointer-events-none"></div>
+
+        <div class="relative z-10 text-center max-w-xl mx-auto">
+          <span class="material-symbols-outlined text-4xl text-[#25D366] mb-2" style="font-variation-settings: 'FILL' 1;">chat</span>
+          <h2 class="font-headline-lg-mobile lg:font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface font-semibold mb-2">
+            Reserva tu mesa en 30 segundos
+          </h2>
+          <p class="text-body-md text-on-surface-variant mb-6 leading-relaxed">
+            Escríbenos directamente por WhatsApp y confirmamos tu mesa de inmediato. Sin esperas ni formularios complejos.
+          </p>
+
+          <!-- WhatsApp Primary Button -->
+          <button onclick="openReservationModal()" class="h-14 w-full sm:w-auto px-8 rounded-full bg-[#25D366] hover:bg-[#1EBE5B] text-white inline-flex items-center justify-center gap-3 font-label-lg text-label-lg shadow-lg active:scale-95 transition-all mb-4 cursor-pointer">
+            <span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">chat</span>
+            <span>Reservar por WhatsApp</span>
+          </button>
+
+          <!-- Alternative Call Link -->
+          <div class="block text-center mb-6">
+            <a class="text-secondary font-label-md text-label-md hover:underline inline-flex items-center gap-1.5" href="tel:971446259">
+              <span class="material-symbols-outlined text-sm">call</span>
+              <span>¿Prefieres llamar? 971 44 62 59</span>
+            </a>
+          </div>
+
+          <!-- User Helpful Guide Box -->
+          <div class="p-4 rounded-xl bg-surface-container-low text-left border border-outline-variant/30">
+            <div class="flex items-center gap-2 text-primary font-label-md text-label-md mb-1.5">
+              <span class="material-symbols-outlined text-sm">info</span>
+              <span>Recomendación para tu mensaje de WhatsApp:</span>
+            </div>
+            <p class="text-body-sm text-on-surface-variant leading-relaxed">
+              Indícanos por favor: <strong class="text-on-surface">Día, hora deseada, número de comensales</strong> y si requieres trona infantil o tienes alguna intolerancia alimentaria.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. CÓMO LLEGAR Y UBICACIÓN -->
+    <section class="py-12 sm:py-16 bg-surface-container-low px-4 sm:px-8" id="contacto">
+      <div class="max-w-5xl mx-auto">
+        <div class="mb-6">
+          <span class="text-label-md font-label-md uppercase tracking-widest text-primary font-bold">Encuéntranos</span>
+          <h2 class="font-headline-lg-mobile lg:font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface font-semibold mt-1">Cómo llegar &amp; Ubicación</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+          <!-- Stylized Location Card / Map Simulation -->
+          <div class="bg-surface-container-lowest rounded-2xl overflow-hidden border border-outline-variant/30 shadow-xs flex flex-col justify-between">
+            <div class="relative h-56 sm:h-64 w-full overflow-hidden bg-surface-container">
+              <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2Yvybk8aXt5E5uJ5Jd4opTCX9iBn7aPfmk2xoTbzP_KFUubdpjnZfYaUt89-8RCKopr_V7xxosm1IKauV5Io_7Y-wEoR1RC8_6V-Yc-xOQxbpko9rF6Eitdz4W44tGXPUacldsqWb0rokeVh9rMOz9LnV2QxLKeLxm6p1Hh8WW8vjPQg6oB5iwVy0x9D-c2gtgWy1-P6pmfySsZv64So-6DHvOeECaqDuBGhM2F0fe_NUWXsOKr0v" alt="Mapa Son Verí Nou Aldente"/>
+              <div class="absolute bottom-3 left-3 bg-surface/90 backdrop-blur-md px-3 py-1 rounded-full border border-outline-variant/30 text-xs font-label-md text-on-surface flex items-center gap-1.5 shadow-xs">
+                <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">pin_drop</span>
+                <span>Plus Code: FPVV+2C Son Verí Nou</span>
+              </div>
+            </div>
+            <div class="p-5 flex items-center justify-between">
+              <div>
+                <span class="font-subhead-lg text-body-md font-semibold text-on-surface block">Rambla, 2, Local 2</span>
+                <span class="text-body-sm text-on-surface-variant">07609 Son Verí Nou, Illes Balears</span>
+              </div>
+              <a class="px-4 py-2 bg-secondary text-on-secondary rounded-full font-label-md text-label-md flex items-center gap-1 shadow-xs hover:bg-secondary/90 active:scale-95 transition-all shrink-0" href="https://maps.google.com/?q=Rambla+2+Son+Veri+Nou+Mallorca" rel="noopener noreferrer" target="_blank">
+                <span class="material-symbols-outlined text-sm">directions</span>
+                <span>Cómo llegar</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Details Grid -->
+          <div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/30 shadow-xs flex flex-col justify-between space-y-4">
+            <div>
+              <h3 class="font-headline-sm text-subhead-lg text-on-surface font-semibold mb-4">Información práctica</h3>
+              <ul class="space-y-3.5">
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-secondary text-xl mt-0.5">storefront</span>
+                  <div>
+                    <span class="text-label-md font-label-md text-on-surface-variant uppercase tracking-wider block">Dirección</span>
+                    <span class="text-body-md text-on-surface">Rambla, 2, Local 2, 07609 Son Verí Nou, Mallorca</span>
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-secondary text-xl mt-0.5">schedule</span>
+                  <div>
+                    <span class="text-label-md font-label-md text-on-surface-variant uppercase tracking-wider block">Horario de servicio</span>
+                    <span class="text-body-md text-on-surface">Abierto todos los días desde las 12:45</span>
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-secondary text-xl mt-0.5">call</span>
+                  <div>
+                    <span class="text-label-md font-label-md text-on-surface-variant uppercase tracking-wider block">Teléfono de atención</span>
+                    <a class="text-body-md text-primary font-medium hover:underline" href="tel:971446259">971 44 62 59</a>
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-secondary text-xl mt-0.5">mail</span>
+                  <div>
+                    <span class="text-label-md font-label-md text-on-surface-variant uppercase tracking-wider block">Correo electrónico</span>
+                    <a class="text-body-md text-on-surface hover:underline" href="mailto:aldente-mallorca@hotmail.com">aldente-mallorca@hotmail.com</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="pt-3 border-t border-outline-variant/30 flex items-center justify-between text-body-sm text-on-surface-variant">
+              <span>Web oficial:</span>
+              <a class="text-secondary font-medium hover:underline flex items-center gap-1" href="https://aldente-mallorca.com" rel="noopener noreferrer" target="_blank">
+                <span>aldente-mallorca.com</span>
+                <span class="material-symbols-outlined text-xs">launch</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-surface-container-low dark:bg-surface-container-highest border-t border-outline-variant/30 dark:border-outline/30 w-full px-4 sm:px-8 py-8 pb-32 max-w-7xl mx-auto flex flex-col items-center gap-4 text-center">
+    <!-- Brand Headline -->
+    <div>
+      <span class="font-headline-md text-headline-md text-primary dark:text-inverse-primary tracking-tight font-bold block">Aldente</span>
+      <span class="text-body-sm text-on-surface-variant">Ristorante Italiano · Son Verí Nou, Mallorca</span>
+    </div>
+    
+    <!-- Quick Navigation Links -->
+    <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-label-md font-label-md text-on-surface-variant dark:text-surface-variant">
+      <a class="hover:text-primary transition-colors duration-200" href="#carta">Carta Gastronómica</a>
+      <a class="hover:text-primary transition-colors duration-200" href="#historia">Nuestra Historia</a>
+      <a class="hover:text-primary transition-colors duration-200" href="#galeria">Galería</a>
+      <a class="hover:text-primary transition-colors duration-200" href="#opiniones">Opiniones</a>
+      <a class="hover:text-primary transition-colors duration-200" href="#contacto">Ubicación &amp; Contacto</a>
+    </div>
+
+    <!-- Legal & Attribution Links -->
+    <div class="flex flex-wrap justify-center gap-x-4 gap-y-1 text-body-sm font-body-sm text-on-surface-variant dark:text-surface-variant">
+      <a class="hover:text-primary transition-colors duration-200" href="#legal" onclick="alert('Ristorante Aldente - Son Verí Nou, Mallorca. Aviso Legal conforme a la normativa vigente.')">Aviso Legal</a>
+      <span>•</span>
+      <a class="hover:text-primary transition-colors duration-200" href="#privacidad" onclick="alert('Tus datos se gestionan exclusivamente para gestionar tu reserva y atención directa.')">Privacidad</a>
+      <span>•</span>
+      <a class="hover:text-primary transition-colors duration-200" href="#alergenos" onclick="openMenuModal('todos')">Carta Alérgenos</a>
+      <span>•</span>
+      <span class="font-mono text-xs">Plus Code: FPVV+2C</span>
+    </div>
+
+    <!-- Copyright -->
+    <p class="text-body-sm font-body-sm text-on-surface-variant/80 mt-2">
+      © 2024 Ristorante Aldente. Son Verí Nou, Mallorca. Todos los derechos reservados.
+    </p>
+  </footer>
+
+  <!-- ================= FIXED BOTTOM ACTION BAR ================= -->
+  <nav aria-label="Navegación de reserva rápida móvil" class="fixed bottom-0 left-0 w-full z-40 flex justify-around items-center px-4 py-2.5 bg-surface-container-lowest/95 dark:bg-inverse-surface/95 backdrop-blur-lg shadow-lg border-t border-outline-variant/40 dark:border-outline/40">
+    <!-- Action 1: Call -->
+    <a class="flex flex-col items-center justify-center text-secondary dark:text-secondary-fixed font-label-md text-label-md py-1 active:scale-95 transition-transform duration-150 hover:text-primary" href="tel:971446259">
+      <span class="material-symbols-outlined text-2xl">call</span>
+      <span class="mt-0.5">Llamar</span>
+    </a>
+    
+    <!-- Action 2: WhatsApp (Direct Messaging) -->
+    <a class="flex flex-col items-center justify-center text-[#25D366] font-label-md text-label-md py-1 active:scale-95 transition-transform duration-150 hover:opacity-90" href="https://wa.me/34687032450" rel="noopener noreferrer" target="_blank">
+      <span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">chat</span>
+      <span class="mt-0.5">WhatsApp</span>
+    </a>
+
+    <!-- Action 3: Reservar (Primary Action) -->
+    <button onclick="openReservationModal()" class="flex flex-col items-center justify-center bg-primary hover:bg-primary-container text-on-primary rounded-full px-5 py-2 font-label-md text-label-md shadow-md active:scale-95 transition-transform duration-150 cursor-pointer">
+      <span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+      <span class="mt-0.5">Reservar</span>
+    </button>
+  </nav>
+
+  <!-- ================= RESERVATION MODAL / BOTTOM SHEET (Per DESIGN.md) ================= -->
+  <div id="reservationModal" class="fixed inset-0 z-50 hidden opacity-0 transition-opacity duration-300 flex items-end sm:items-center justify-center">
+    <div id="reservationOverlay" onclick="closeReservationModal()" class="fixed inset-0 bg-on-background/60 modal-backdrop-blur"></div>
+    
+    <div id="reservationSheet" class="relative z-10 w-full max-w-lg bg-surface-container-lowest rounded-t-3xl sm:rounded-3xl p-6 sm:p-8 max-h-[90vh] overflow-y-auto shadow-2xl transform translate-y-full sm:translate-y-0 sm:scale-95 transition-all duration-300">
+      
+      <!-- Drawer Handle (for mobile feel) -->
+      <div class="w-12 h-1.5 bg-[#EFECE4] rounded-full mx-auto mb-4 sm:hidden"></div>
+
+      <!-- Header -->
+      <div class="flex items-center justify-between pb-3 border-b border-outline-variant/30">
+        <div>
+          <span class="text-xs uppercase font-label-md text-secondary tracking-widest font-bold">Ristorante Aldente</span>
+          <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Reserva tu mesa</h3>
+        </div>
+        <button onclick="closeReservationModal()" class="p-2 rounded-full hover:bg-surface-container transition-colors text-on-surface" aria-label="Cerrar modal">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+
+      <!-- Reservation Form -->
+      <form id="reservationForm" onsubmit="handleReservationSubmit(event)" class="mt-5 space-y-4">
+        
+        <!-- Date & Time Row -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-label-md font-label-md text-on-surface mb-1" for="resDate">Fecha</label>
+            <input type="date" id="resDate" required class="w-full px-4 py-2.5 rounded-xl border border-outline-variant/50 bg-surface-container-lowest text-on-surface text-body-md transition-all"/>
+          </div>
+          <div>
+            <label class="block text-label-md font-label-md text-on-surface mb-1" for="resTime">Hora deseada</label>
+            <select id="resTime" required class="w-full px-4 py-2.5 rounded-xl border border-outline-variant/50 bg-surface-container-lowest text-on-surface text-body-md transition-all">
+              <optgroup label="Almuerzo">
+                <option value="13:00">13:00</option>
+                <option value="13:30">13:30</option>
+                <option value="14:00" selected>14:00</option>
+                <option value="14:30">14:30</option>
+                <option value="15:00">15:00</option>
+              </optgroup>
+              <optgroup label="Cena">
+                <option value="19:30">19:30</option>
+                <option value="20:00">20:00</option>
+                <option value="20:30">20:30</option>
+                <option value="21:00">21:00</option>
+                <option value="21:30">21:30</option>
+                <option value="22:00">22:00</option>
+              </optgroup>
+            </select>
+          </div>
+        </div>
+
+        <!-- Guests Selector (Pills) -->
+        <div>
+          <label class="block text-label-md font-label-md text-on-surface mb-1.5">Número de personas</label>
+          <div class="grid grid-cols-4 sm:grid-cols-8 gap-2" id="guestCountPills">
+            <button type="button" onclick="selectGuests(1)" class="guest-pill py-2 rounded-xl border border-outline-variant/40 text-on-surface font-label-md text-center hover:border-secondary transition-all">1</button>
+            <button type="button" onclick="selectGuests(2)" class="guest-pill py-2 rounded-xl bg-secondary text-on-secondary font-label-md text-center shadow-xs transition-all">2</button>
+            <button type="button" onclick="selectGuests(3)" class="guest-pill py-2 rounded-xl border border-outline-variant/40 text-on-surface font-label-md text-center hover:border-secondary transition-all">3</button>
+            <button type="button" onclick="selectGuests(4)" class="guest-pill py-2 rounded-xl border border-outline-variant/40 text-on-surface font-label-md text-center hover:border-secondary transition-all">4</button>
+            <button type="button" onclick="selectGuests(5)" class="guest-pill py-2 rounded-xl border border-outline-variant/40 text-on-surface font-label-md text-center hover:border-secondary transition-all">5</button>
+            <button type="button" onclick="selectGuests(6)" class="guest-pill py-2 rounded-xl border border-outline-variant/40 text-on-surface font-label-md text-center hover:border-secondary transition-all">6</button>
+            <button type="button" onclick="selectGuests(7)" class="guest-pill py-2 rounded-xl border border-outline-variant/40 text-on-surface font-label-md text-center hover:border-secondary transition-all">7</button>
+            <button type="button" onclick="selectGuests('8+')" class="guest-pill py-2 rounded-xl border border-outline-variant/40 text-on-surface font-label-md text-center hover:border-secondary transition-all">8+</button>
+          </div>
+          <input type="hidden" id="resGuests" value="2"/>
+        </div>
+
+        <!-- Zone Preference -->
+        <div>
+          <label class="block text-label-md font-label-md text-on-surface mb-1.5">Zona de preferencia</label>
+          <div class="grid grid-cols-2 gap-2" id="zonePills">
+            <button type="button" onclick="selectZone('Terraza mediterránea')" id="zoneTerraza" class="zone-pill py-2.5 px-3 rounded-xl bg-secondary text-on-secondary font-label-md flex items-center justify-center gap-1.5 transition-all">
+              <span class="material-symbols-outlined text-sm">wb_sunny</span>
+              <span>Terraza</span>
+            </button>
+            <button type="button" onclick="selectZone('Salón interior')" id="zoneSalon" class="zone-pill py-2.5 px-3 rounded-xl border border-outline-variant/40 text-on-surface font-label-md flex items-center justify-center gap-1.5 hover:border-secondary transition-all">
+              <span class="material-symbols-outlined text-sm">chair</span>
+              <span>Salón Interior</span>
+            </button>
+          </div>
+          <input type="hidden" id="resZone" value="Terraza mediterránea"/>
+        </div>
+
+        <!-- Guest Contact Info -->
+        <div>
+          <label class="block text-label-md font-label-md text-on-surface mb-1" for="resName">Nombre del titular</label>
+          <input type="text" id="resName" required placeholder="Tu nombre y apellidos" class="w-full px-4 py-2.5 rounded-xl border border-outline-variant/50 bg-surface-container-lowest text-on-surface text-body-md transition-all"/>
+        </div>
+
+        <!-- Special Requests / Allergies -->
+        <div>
+          <label class="block text-label-md font-label-md text-on-surface mb-1" for="resNotes">Peticiones especiales (opcional)</label>
+          <input type="text" id="resNotes" placeholder="Trona infantil, intolerancias, celebración..." class="w-full px-4 py-2.5 rounded-xl border border-outline-variant/50 bg-surface-container-lowest text-on-surface text-body-md transition-all"/>
+        </div>
+
+        <!-- Confirm Action (Tomato Red Primary CTA per DESIGN.md) -->
+        <div class="pt-2">
+          <button type="submit" class="w-full py-3.5 px-6 rounded-full bg-[#25D366] hover:bg-[#1EBE5B] text-white font-label-lg text-label-lg shadow-md active:scale-98 transition-all flex items-center justify-center gap-2 cursor-pointer">
+            <span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">chat</span>
+            <span>Confirmar reserva por WhatsApp</span>
+          </button>
+          
+          <div class="flex items-center justify-center gap-1.5 mt-2.5 text-xs text-on-surface-variant">
+            <span class="material-symbols-outlined text-sm text-secondary">verified</span>
+            <span>Confirmación inmediata directa con el equipo de Aldente</span>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <!-- ================= FULL MENU MODAL (Interactive Course Showcase) ================= -->
+  <div id="menuModal" class="fixed inset-0 z-50 hidden opacity-0 transition-opacity duration-300 flex items-center justify-center p-3 sm:p-6">
+    <div onclick="closeMenuModal()" class="fixed inset-0 bg-on-background/60 modal-backdrop-blur"></div>
+
+    <div class="relative z-10 w-full max-w-4xl bg-surface-container-lowest rounded-3xl p-6 sm:p-8 max-h-[90vh] flex flex-col shadow-2xl overflow-hidden">
+      
+      <!-- Modal Header -->
+      <div class="flex items-center justify-between pb-4 border-b border-outline-variant/30 shrink-0">
+        <div>
+          <span class="text-xs uppercase font-label-md text-primary tracking-widest font-bold">Carta Gastronómica</span>
+          <h3 class="font-headline-md text-headline-sm text-on-surface font-semibold" id="menuModalTitle">Nuestra Carta Completa</h3>
+        </div>
+        <button onclick="closeMenuModal()" class="p-2 rounded-full hover:bg-surface-container transition-colors text-on-surface" aria-label="Cerrar carta">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+
+      <!-- Course Category Filter Pills (Per DESIGN.md Chips specification) -->
+      <div class="flex gap-2 overflow-x-auto py-3 shrink-0 custom-scrollbar border-b border-outline-variant/20" id="menuPillsContainer">
+        <button onclick="filterMenuCategory('todos')" class="menu-cat-btn px-4 py-2 rounded-full bg-secondary text-on-secondary font-label-md text-label-md shrink-0 transition-all shadow-xs" data-category="todos">Todos</button>
+        <button onclick="filterMenuCategory('antipasti')" class="menu-cat-btn px-4 py-2 rounded-full bg-surface-container border border-outline-variant/40 text-on-surface font-label-md text-label-md shrink-0 hover:border-secondary transition-all" data-category="antipasti">Antipasti</button>
+        <button onclick="filterMenuCategory('pasta')" class="menu-cat-btn px-4 py-2 rounded-full bg-surface-container border border-outline-variant/40 text-on-surface font-label-md text-label-md shrink-0 hover:border-secondary transition-all" data-category="pasta">Pasta Fresca</button>
+        <button onclick="filterMenuCategory('pizzas')" class="menu-cat-btn px-4 py-2 rounded-full bg-surface-container border border-outline-variant/40 text-on-surface font-label-md text-label-md shrink-0 hover:border-secondary transition-all" data-category="pizzas">Pizze al Forno</button>
+        <button onclick="filterMenuCategory('carni-pesce')" class="menu-cat-btn px-4 py-2 rounded-full bg-surface-container border border-outline-variant/40 text-on-surface font-label-md text-label-md shrink-0 hover:border-secondary transition-all" data-category="carni-pesce">Carni &amp; Pesce</button>
+        <button onclick="filterMenuCategory('dolci')" class="menu-cat-btn px-4 py-2 rounded-full bg-surface-container border border-outline-variant/40 text-on-surface font-label-md text-label-md shrink-0 hover:border-secondary transition-all" data-category="dolci">Dolci Caseros</button>
+        <button onclick="filterMenuCategory('vinos')" class="menu-cat-btn px-4 py-2 rounded-full bg-surface-container border border-outline-variant/40 text-on-surface font-label-md text-label-md shrink-0 hover:border-secondary transition-all" data-category="vinos">Vinos &amp; Bebidas</button>
+      </div>
+
+      <!-- Dishes Showcase List (Scrollable) -->
+      <div class="overflow-y-auto py-4 flex-grow space-y-3 custom-scrollbar" id="menuDishesContainer">
+        <!-- Rendered via JS -->
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="pt-4 border-t border-outline-variant/30 flex flex-col sm:flex-row items-center justify-between gap-3 shrink-0">
+        <span class="text-xs text-on-surface-variant flex items-center gap-1">
+          <span class="material-symbols-outlined text-sm text-secondary">eco</span>
+          <span>Consúltanos para adaptaciones vegetarianas o sin gluten (Senza Glutine)</span>
+        </span>
+        <button onclick="closeMenuModal(); openReservationModal();" class="px-6 py-2.5 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md shadow-sm transition-all flex items-center gap-1.5 cursor-pointer">
+          <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+          <span>Reservar mesa ahora</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= INTERACTIVE JAVASCRIPT ================= -->
+  <script>
+    // --- 1. DRAWER LOGIC ---
+    const drawerToggle = document.getElementById('drawerToggle');
+    const drawerClose = document.getElementById('drawerClose');
+    const navigationDrawer = document.getElementById('navigationDrawer');
+    const drawerOverlay = document.getElementById('drawerOverlay');
+
+    function openDrawer() {
+      navigationDrawer.classList.remove('-translate-x-full');
+      drawerOverlay.classList.remove('hidden');
+      setTimeout(() => drawerOverlay.classList.remove('opacity-0'), 10);
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeDrawer() {
+      navigationDrawer.classList.add('-translate-x-full');
+      drawerOverlay.classList.add('opacity-0');
+      setTimeout(() => {
+        drawerOverlay.classList.add('hidden');
+        document.body.style.overflow = '';
+      }, 300);
+    }
+
+    if (drawerToggle) drawerToggle.addEventListener('click', openDrawer);
+    if (drawerClose) drawerClose.addEventListener('click', closeDrawer);
+    if (drawerOverlay) drawerOverlay.addEventListener('click', closeDrawer);
+
+    navigationDrawer.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', closeDrawer);
+    });
+
+    // --- 2. RESERVATION MODAL / BOTTOM SHEET LOGIC ---
+    const resModal = document.getElementById('reservationModal');
+    const resSheet = document.getElementById('reservationSheet');
+    const resDateInput = document.getElementById('resDate');
+
+    // Set today as default min date
+    const today = new Date().toISOString().split('T')[0];
+    if (resDateInput) {
+      resDateInput.min = today;
+      resDateInput.value = today;
+    }
+
+    function openReservationModal() {
+      resModal.classList.remove('hidden');
+      setTimeout(() => {
+        resModal.classList.remove('opacity-0');
+        resSheet.classList.remove('translate-y-full');
+        resSheet.classList.remove('sm:scale-95');
+        resSheet.classList.add('translate-y-0');
+        resSheet.classList.add('sm:scale-100');
+      }, 10);
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeReservationModal() {
+      resSheet.classList.remove('translate-y-0');
+      resSheet.classList.remove('sm:scale-100');
+      resSheet.classList.add('translate-y-full');
+      resSheet.classList.add('sm:scale-95');
+      resModal.classList.add('opacity-0');
+      setTimeout(() => {
+        resModal.classList.add('hidden');
+        document.body.style.overflow = '';
+      }, 300);
+    }
+
+    let selectedGuestsCount = '2';
+    function selectGuests(count) {
+      selectedGuestsCount = count;
+      document.getElementById('resGuests').value = count;
+      document.querySelectorAll('.guest-pill').forEach(btn => {
+        btn.className = 'guest-pill py-2 rounded-xl border border-outline-variant/40 text-on-surface font-label-md text-center hover:border-secondary transition-all';
+      });
+      event.target.className = 'guest-pill py-2 rounded-xl bg-secondary text-on-secondary font-label-md text-center shadow-xs transition-all';
+    }
+
+    let selectedZonePreference = 'Terraza mediterránea';
+    function selectZone(zone) {
+      selectedZonePreference = zone;
+      document.getElementById('resZone').value = zone;
+      const btnTerraza = document.getElementById('zoneTerraza');
+      const btnSalon = document.getElementById('zoneSalon');
+      if (zone === 'Terraza mediterránea') {
+        btnTerraza.className = 'zone-pill py-2.5 px-3 rounded-xl bg-secondary text-on-secondary font-label-md flex items-center justify-center gap-1.5 transition-all';
+        btnSalon.className = 'zone-pill py-2.5 px-3 rounded-xl border border-outline-variant/40 text-on-surface font-label-md flex items-center justify-center gap-1.5 hover:border-secondary transition-all';
+      } else {
+        btnSalon.className = 'zone-pill py-2.5 px-3 rounded-xl bg-secondary text-on-secondary font-label-md flex items-center justify-center gap-1.5 transition-all';
+        btnTerraza.className = 'zone-pill py-2.5 px-3 rounded-xl border border-outline-variant/40 text-on-surface font-label-md flex items-center justify-center gap-1.5 hover:border-secondary transition-all';
+      }
+    }
+
+    function handleReservationSubmit(e) {
+      e.preventDefault();
+      const date = document.getElementById('resDate').value;
+      const time = document.getElementById('resTime').value;
+      const guests = document.getElementById('resGuests').value;
+      const zone = document.getElementById('resZone').value;
+      const name = document.getElementById('resName').value;
+      const notes = document.getElementById('resNotes').value;
+
+      let msg = `Hola Ristorante Aldente! Quisiera reservar una mesa:\n`;
+      msg += `👤 Nombre: ${name}\n`;
+      msg += `📅 Fecha: ${date}\n`;
+      msg += `⏰ Hora: ${time}\n`;
+      msg += `👥 Comensales: ${guests}\n`;
+      msg += `📍 Zona: ${zone}\n`;
+      if (notes.trim()) {
+        msg += `📝 Observaciones: ${notes}\n`;
+      }
+      msg += `\n¡Muchas gracias!`;
+
+      const encoded = encodeURIComponent(msg);
+      window.open(`https://wa.me/34687032450?text=${encoded}`, '_blank');
+      closeReservationModal();
+    }
+
+    // --- 3. FULL MENU DATA & MODAL LOGIC ---
+    const menuData = [
+      // Antipasti
+      { category: 'antipasti', name: 'Caprese di Bufala Campana DOP', price: '12,90 €', desc: 'Mozzarella di bufala, tomates selectos de huerto mallorquín, albahaca fresca y aceite de oliva virgen extra.', tag: 'Vegetariano · Km 0' },
+      { category: 'antipasti', name: 'Carpaccio di Manzo con Parmigiano', price: '14,50 €', desc: 'Finas láminas de solomillo de ternera, rúcula selvática, virutas de Parmigiano Reggiano 24 meses y aceite de trufa blanca.', tag: 'Especialidad' },
+      { category: 'antipasti', name: 'Gambas al Ajillo en Cazuela de Barro', price: '13,50 €', desc: 'Langostinos salteados al fuego vivo con aceite virgen extra, ajos laminados y guindilla.', tag: 'Marisco Fresco' },
+      { category: 'antipasti', name: 'Bruschetta Tradizionale con Pomodoro e Basilico', price: '8,50 €', desc: 'Pan rústico tostado al horno de piedra, dados de tomate fresco, ajo y albahaca.', tag: 'Vegetariano' },
+      
+      // Pasta
+      { category: 'pasta', name: 'Tagliatelle Bolognese Tradizionale', price: '13,90 €', desc: 'Pasta fresca casera al huevo con ragù clásico cocinado a fuego lento durante 4 horas.', tag: 'Pasta Fresca' },
+      { category: 'pasta', name: 'Spaghetti alle Vongole Veraci', price: '16,50 €', desc: 'Spaghetti al dente con almejas frescas, vino blanco, ajo, perejil y guindilla ligera.', tag: 'Marisco' },
+      { category: 'pasta', name: 'Ravioli di Ricotta e Spinaci al Burro e Salvia', price: '14,90 €', desc: 'Ravioli rellenos artesanales salteados en mantequilla dorada, hojas de salvia y pecorino.', tag: 'Vegetariano' },
+      { category: 'pasta', name: 'Penne all’Arrabbiata', price: '11,50 €', desc: 'Salsa de tomate San Marzano picante con ajo fresco y perejil picado.', tag: 'Picante' },
+
+      // Pizzas
+      { category: 'pizzas', name: 'Pizza Pepperoni', price: '14,50 €', desc: 'Masa fermentada 48h, salsa San Marzano, mozzarella fior di latte y pepperoni ligeramente picante.', tag: 'Favorito' },
+      { category: 'pizzas', name: 'Pizza Margherita Verace', price: '11,00 €', desc: 'Salsa San Marzano DOP, mozzarella fior di latte, albahaca fresca y aceite de oliva virgen extra.', tag: 'Clásica' },
+      { category: 'pizzas', name: 'Pizza Quattro Formaggi', price: '14,00 €', desc: 'Fior di latte, gorgonzola cremoso, provolone ahumado y lascas de Parmigiano Reggiano.', tag: 'Quesos selectos' },
+      { category: 'pizzas', name: 'Pizza Prosciutto e Funghi', price: '13,50 €', desc: 'Tomate San Marzano, fior di latte, jamón cocido artesano italiano y champiñones frescos.', tag: 'Favorito' },
+      { category: 'pizzas', name: 'Pizza Aldente Speciale', price: '15,50 €', desc: 'Mozzarella, burrata fresca al salir del horno, jamón de Parma curado 18 meses y rúcula fresca.', tag: 'Chef Choice' },
+
+      // Carni & Pesce
+      { category: 'carni-pesce', name: 'Entrecôte a la Brasa con Romero', price: '22,50 €', desc: 'Lomo de ternera madurada a la parrilla de carbón con patatas rústicas al horno de piedra.', tag: 'Carnes a la Brasa' },
+      { category: 'carni-pesce', name: 'Lubina al Forno Mediterránea', price: '19,50 €', desc: 'Filete de lubina fresca al horno con tomates cherry confitados, aceitunas negras y patata panadera.', tag: 'Pescado Fresco' },
+      { category: 'carni-pesce', name: 'Scaloppine al Limone', price: '16,50 €', desc: 'Finos escalopes de ternera blanca en suave reducción de limón y vino blanco.', tag: 'Tradicional' },
+
+      // Dolci
+      { category: 'dolci', name: 'Tiramisù Tradizionale Casero', price: '6,50 €', desc: 'Bizcocho soletilla empapado en café espresso, crema sedosa de mascarpone y cacao puro.', tag: 'Casero' },
+      { category: 'dolci', name: 'Panna Cotta con Frutti di Bosco', price: '6,00 €', desc: 'Crema de vainilla de Madagascar con reducción tibia de frutos rojos silvestres.', tag: 'Postre' },
+      { category: 'dolci', name: 'Fondant de Chocolate con Corazón Fluido', price: '7,00 €', desc: 'Bizcocho caliente de chocolate belga con centro fundente y helado de vainilla.', tag: 'Irresistible' },
+
+      // Vinos
+      { category: 'vinos', name: 'Vino Tinto Mallorca D.O. Binissalem (Copa / Botella)', price: '4,50 € / 22,00 €', desc: 'Manto Negro & Callet de viñedos locales. Notas especiadas y fruta madura.', tag: 'Vino de Mallorca' },
+      { category: 'vinos', name: 'Pinot Grigio delle Venezie D.O.C.', price: '4,00 € / 19,50 €', desc: 'Blanco italiano refrescante, afrutado y floral con acidez equilibrada.', tag: 'Vino Italiano' },
+      { category: 'vinos', name: 'Chianti Classico D.O.C.G. Toscana', price: '5,00 € / 25,00 €', desc: 'Sangiovese estructurado con notas de cereza madura y madera noble.', tag: 'Toscana' },
+      { category: 'vinos', name: 'Prosecco di Valdobbiadene Superiore', price: '4,50 € / 22,00 €', desc: 'Burbuja fina italiana, ideal como aperitivo en nuestra terraza.', tag: 'Espumoso' }
+    ];
+
+    const menuModal = document.getElementById('menuModal');
+    const menuContainer = document.getElementById('menuDishesContainer');
+
+    function openMenuModal(category = 'todos', lang = 'es') {
+      filterMenuCategory(category);
+      menuModal.classList.remove('hidden');
+      setTimeout(() => menuModal.classList.remove('opacity-0'), 10);
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenuModal() {
+      menuModal.classList.add('opacity-0');
+      setTimeout(() => {
+        menuModal.classList.add('hidden');
+        document.body.style.overflow = '';
+      }, 300);
+    }
+
+    function filterMenuCategory(cat) {
+      document.querySelectorAll('.menu-cat-btn').forEach(btn => {
+        if (btn.dataset.category === cat) {
+          btn.className = 'menu-cat-btn px-4 py-2 rounded-full bg-secondary text-on-secondary font-label-md text-label-md shrink-0 transition-all shadow-xs';
+        } else {
+          btn.className = 'menu-cat-btn px-4 py-2 rounded-full bg-surface-container border border-outline-variant/40 text-on-surface font-label-md text-label-md shrink-0 hover:border-secondary transition-all';
+        }
+      });
+
+      const filtered = cat === 'todos' ? menuData : menuData.filter(d => d.category === cat);
+      renderMenuItems(filtered);
+    }
+
+    function renderMenuItems(items) {
+      menuContainer.innerHTML = '';
+      items.forEach(item => {
+        const card = document.createElement('div');
+        card.className = 'p-4 rounded-2xl bg-surface border border-outline-variant/25 hover:border-secondary/50 transition-all flex flex-col sm:flex-row sm:items-start justify-between gap-2 shadow-2xs';
+        card.innerHTML = `
+          <div class="pr-2">
+            <div class="flex items-center gap-2 mb-1">
+              <h4 class="font-headline-sm text-body-lg text-on-surface font-semibold">${item.name}</h4>
+              ${item.tag ? `<span class="px-2 py-0.5 rounded-full bg-secondary/10 text-secondary text-[10px] font-label-md shrink-0">${item.tag}</span>` : ''}
+            </div>
+            <p class="text-body-sm text-on-surface-variant">${item.desc}</p>
+          </div>
+          <span class="font-subhead-lg text-subhead-lg text-secondary font-bold shrink-0 self-end sm:self-start">${item.price}</span>
+        `;
+        menuContainer.appendChild(card);
+      });
+    }
+
+    // --- 4. LANGUAGE SWITCHER LOGIC ---
+    const translations = {
+      es: {
+        navReserve: "Reservar",
+        heroTitle: "Auténtica cocina italiana en Mallorca",
+        heroSubtitle: "Pasta fresca hecha a mano, pizzas crujientes al horno de piedra y el calor de la verdadera hospitalidad costera.",
+        heroReserveWhatsapp: "Reservar por WhatsApp",
+        heroViewMenu: "Ver la carta",
+        menuFullTitle: "Nuestra Carta Completa",
+      },
+      ca: {
+        navReserve: "Reservar",
+        heroTitle: "Autèntica cuina italiana a Mallorca",
+        heroSubtitle: "Pasta fresca feta a mà, pizzes cruixents al forn de pedra i el caliu de la veritable hospitalitat costanera.",
+        heroReserveWhatsapp: "Reservar per WhatsApp",
+        heroViewMenu: "Veure la carta",
+        menuFullTitle: "La Nostra Carta Completa",
+      },
+      en: {
+        navReserve: "Book Table",
+        heroTitle: "Authentic Italian Cuisine in Mallorca",
+        heroSubtitle: "Handmade fresh pasta, crisp stone-baked pizzas, and the warmth of genuine Mediterranean hospitality.",
+        heroReserveWhatsapp: "Book via WhatsApp",
+        heroViewMenu: "Explore Menu",
+        menuFullTitle: "Our Full Menu",
+      },
+      de: {
+        navReserve: "Reservieren",
+        heroTitle: "Authentische italienische Küche auf Mallorca",
+        heroSubtitle: "Hausgemachte frische Pasta, knusprige Steinofenpizzen und die Herzlichkeit echter mediterraner Gastfreundschaft.",
+        heroReserveWhatsapp: "Per WhatsApp reservieren",
+        heroViewMenu: "Speisekarte ansehen",
+        menuFullTitle: "Unsere Speisekarte",
+      }
+    };
+
+    const langSelector = document.getElementById('langSelector');
+    if (langSelector) {
+      langSelector.addEventListener('change', (e) => {
+        const lang = e.target.value;
+        const t = translations[lang] || translations.es;
+        
+        document.getElementById('heroTitle').innerText = t.heroTitle;
+        document.getElementById('heroSubtitle').innerText = t.heroSubtitle;
+        document.getElementById('menuModalTitle').innerText = t.menuFullTitle;
+        document.querySelectorAll('[data-i18n="nav.reserve"]').forEach(el => el.innerText = t.navReserve);
+        document.querySelectorAll('[data-i18n="hero.reserveWhatsapp"]').forEach(el => el.innerText = t.heroReserveWhatsapp);
+        document.querySelectorAll('[data-i18n="hero.viewMenu"]').forEach(el => el.innerText = t.heroViewMenu);
+      });
+    }
+
+    // Initialize full menu items
+    renderMenuItems(menuData);
+  </script>
+</body>
+</html>
